@@ -141,11 +141,14 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
+function removeFlavorByName(array, flavorToRemove){
   /*your code here*/
+  // flavorToRemove >= 0 ? array.splice(array.indexOf(flavorToRemove), 1) : array = 'Please try again!';
+  array.splice(array.indexOf(flavorToRemove), 1) //what if the user enter a negative number? Use the above method, but I won't pass the test.
+  return array;
 }
 
-
+console.log(removeFlavorByName(originalFlavors, 5));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. 
